@@ -2,7 +2,7 @@ FROM mostlyai/jenkins-miniconda
 
 USER root
 
-RUN apt update
-RUN apt install vim
+RUN apt-get update
+RUN apt-get install vim -y
 
 USER jenkins
